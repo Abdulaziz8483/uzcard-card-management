@@ -1,0 +1,30 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+POST localhost:8082/api/create
+Content-Type: application/json
+
+{
+  "name": "TechBank",
+  "address": "123 Main St",
+  "contact": "123-456-7890",
+  "visible": true,
+  "role": "BANK",
+  "code": "BANK001"
+}
+###
+PUT localhost:8082/api/update
+Content-Type: application/json
+
+{
+  "name": "TechBank",
+  "address": "123 Main St",
+  "contact": "123-456-7890",
+  "visible": true,
+  "role": "BANK",
+  "code": "BANK001"
+}
+###
+GET localhost:8082/api/all/id
